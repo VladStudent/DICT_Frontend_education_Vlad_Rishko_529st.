@@ -1,21 +1,499 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-  <title>Homepage | Department of Information and
-    Communication Technologies
-  </title>
   <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кафедра ІКТ ХАІ</title>
 </head>
 <body>
-<h1>Вітаємо на сайті кафедри Інформаційних і
-  коммунікаційних технологій ім. О.О.Зеленського!</h1>
-<p>Це перший тестовий варіант нашого навчального
-  проекту.</p>
-<img src="images/logo.jpg" alt="Логотип кафедри">
-<script src="js/main.js"></script>
+
+<header>
+  <div class="logo">
+   <img src="images/logo.png" alt="Логотип кафедри ІКТ" title="Логотип D://CT">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#specialties">СПЕЦІАЛЬНОСТІ</a></li>
+      <li><a href="#science">НАУКА</a></li>
+      <li><a href="#news">НОВИНИ</a></li>
+      <li><a href="#contacts">КОНТАКТИ</a></li>
+    </ul>
+  </nav>
+  <div class="controls">
+    <span class="search-icon">🔍</span>
+    <span class="lang-switch"><a href="#ua">UA</a> | <a href="#en">EN</a></span>
+  </div>
+</header>
+
+<main>
+
+  <section id="banner">
+    <div class="banner-text">
+      <h1>Створюй майбутнє. Тут і зараз!</h1>
+      <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар'єри мрії. Почни свій шлях вже сьогодні!</p>
+      <button>ХОЧУ ПОСТУПИТИ</button>
+    </div>
+    <div class="banner-image">
+      <img src="images/Man.png" alt="Студент з ноутбуком" title="Студент кафедри">
+    </div>
+  </section>
+
+  <section id="specialties">
+    <h2>Наші спеціальності</h2>
+    <p>Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій за двома напрямками: 172 — Електронні комунікації та радіотехніка і 126 — Інформаційні системи та технології.</p>
+    <div class="cards">
+      <article class="card">
+        <h3>126</h3>
+        <p>«Інформаційні системи і технології»</p>
+      </article>
+      <article class="card">
+        <h3>172</h3>
+        <p>«Електронні комунікації та радіотехніка»</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="partners">
+    <h2>Нам довіряють</h2>
+    <div class="logos">
+      <img src="images/nix.jpg" alt="Логотип NIX" title="Компанія NIX">
+      <img src="images/sigma.png" alt="Логотип Sigma" title="Компанія Sigma Software">
+      <img src="images/globallogic.png" alt="Логотип GlobalLogic" title="Компанія GlobalLogic">
+      <img src="images/epam.png" alt="Логотип EPAM" title="Компанія EPAM">
+      <img src="images/softserve-logo.png" alt="Логотип SoftServe" title="Компанія SoftServe">
+      <img src="images/920-DA-logo-color-rgb.png" alt="Логотип DataArt" title="Компанія DataArt">
+    </div>
+  </section>
+
+  <section id="numbers">
+    <h2>Якщо в числах</h2>
+    <div class="stats-container">
+      <div class="stat">
+        <h3>18</h3>
+        <p>Досвідчених викладачів</p>
+      </div>
+      <div class="stat">
+        <h3>65</h3>
+        <p>Навчальних дисциплін</p>
+      </div>
+      <div class="stat">
+        <h3>1200+</h3>
+        <p>Талановитих випускників</p>
+      </div>
+      <div class="stat">
+        <h3>∞</h3>
+        <p>Унікального досвіду</p>
+      </div>
+    </div>
+  </section>
 
 
+  <section id="reviews">
+    <h2> #D<span style="color: red;">ICT</span>Experience</h2>
+
+    <div class="carousel">
+      <article class="review-card">
+        <p>"Дуже подобається, що знання тут універсальні.
+          Я зміг поєднати технічні навички з цифровим маркетингом,
+          і тепер успішно працюю з Google Ads та аналітикою.
+          Викладачі завжди підтримують сучасні ініціативи
+          та дають свободу у виборі тем для проєктів."</p>
+        <div class="author">
+          <img src="images/avatar1.jpg" alt="Аватар" title="Випускник">
+          <span> Михайло Лебіга</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <p>"Навчання на кафедрі дало мені потужну базу.
+          Особливо круто, що ми багато працюємо з реальними проєктами
+          на Python та проєктуємо бази даних.
+          Це дозволило мені швидко адаптуватися
+          до реальних робочих задач та знайти
+          круту роботу ще під час навчання."</p>
+        <div class="author">
+          <img src="images/avatar1.jpg" alt="Аватар" title="Випускник">
+          <span> Зейбель Сергій</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <p>"Сучасні підходи та актуальний стек технологій — це те, за чим сюди варто йти.
+          Навчився працювати з Git, налаштовувати середовища та розуміти архітектуру
+          інформаційних систем. Рекомендую всім, хто шукає практичний досвід,
+          а не просто суху теорію."</p>
+        <div class="author">
+          <img src="images/avatar1.jpg" alt="Аватар" title="Випускник">
+          <span> Іван Рудьский </span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <p>"Окрема подяка викладачам за те, що завжди
+          на зв'язку і допомагають розібратися
+          зі складним кодом."</p>
+        <div class="author">
+          <img src="images/avatar1.jpg" alt="Аватар" title="Випускник">
+          <span> Інна Шевченко</span>
+        </div>
+      </article>
+    </div>
+    <div class="audio-wrapper">
+      <audio controls>
+        <source src="images/111.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+
+  <section id="science">
+    <div class="science-image">
+      <img src="images/grafik.png" alt="Графіки досліджень" title="Наука та інновації">
+    </div>
+
+    <div class="science-text">
+      <h2>Наука та інновації</h2>
+      <h3>Від аудиторії — до реального проєкту</h3>
+      <p>Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах, розробляють ІТ-рішення, створюють стартапи та співпрацюють з компаніями-партнерами. На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання. Дослідження, що перетворюються на продукт — саме тут це можливо.</p>
+      <button>ДІЗНАТИСЬ БІЛЬШЕ</button>
+    </div>
+  </section>
+
+  <section id="news">
+    <br>
+    <br>
+    <br>
+    <h2>Новини</h2>
+    <video autoplay muted loop>
+      <source src="images/istockphoto-2156675608-640_adpp_is.mp4" type="video/mp4">
+      Ваш браузер не підтримує відеоелемент.
+    </video>
+    <div class="carousel">
+      <article class="news-card">
+        <img src="images/111.jpg" alt="Хакатон">
+        <h4>Перемога у всеукраїнському ІТ-хакатоні</h4>
+        <p>Команда студентів нашої кафедри представила інноваційний стартап на базі штучного інтелекту та здобула перше місце серед 50 університетів України.</p>
+        <span class="news-date">28 вер 2026</span>
+      </article>
+
+      <article class="news-card">
+        <img src="images/222.jpg" alt="Лекція">
+        <h4>Гостьова лекція від фахівців NIX</h4>
+        <p>В рамках співпраці з ІТ-компаніями студенти дізналися про сучасні тренди у розробці програмного забезпечення. Спікери поділилися реальними кейсами з практики.</p>
+        <span class="news-date">25 вер 2026</span>
+      </article>
+
+      <article class="news-card">
+        <img src="images/333.jpg" alt="Конференція">
+        <h4>Наукова конференція з кібербезпеки</h4>
+        <p>Викладачі та магістранти кафедри взяли участь у міжнародній конференції, де обговорили новітні методи захисту інформаційних систем від кібератак.</p>
+        <span class="news-date">20 вер 2026</span>
+      </article>
+
+      <article class="news-card">
+        <img src="images/444.webp" alt="Лабораторія">
+        <h4>Відкриття нової лабораторії</h4>
+        <p>За підтримки наших партнерів з GlobalLogic на кафедрі відкрито сучасну лабораторію мережевих технологій. Практичні заняття стануть ще ефективнішими!</p>
+        <span class="news-date">15 вер 2026</span>
+      </article>
+    </div>
+    <button>БІЛЬШЕ НОВИН</button>
+  </section>
+
+
+  <div class="course-container">
+    <h2 class="course-title">1 Курс</h2>
+
+    <div class="semesters-wrapper">
+      <!-- 1 Семестр -->
+      <div class="semester-box">
+        <h3 class="semester-title">1 семестр</h3>
+        <table class="schedule-table">
+          <thead>
+          <tr>
+            <th>Назва дисципліни</th>
+            <th class="col-credits">Кредити</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <span class="icon">
+                <img src="images/pravo.png" alt="иконка" class="subject-icon">
+              </span> Мовні компетентності (іноземна мова)
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon">
+               <img src="images/pravo.png" alt="иконка" class="subject-icon">
+              </span> Українські студії
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/mova.png" alt="иконка" class="subject-icon"></span> Правова компетентність (на вибір)
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/matem.png" alt="иконка" class="subject-icon"></span> Вища математика
+            </td>
+            <td class="col-credits">5.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/matem.png" alt="иконка" class="subject-icon"></span> Дискретна математика
+            </td>
+            <td class="col-credits">5.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pg.png" alt="иконка" class="subject-icon"></span> Основи інфокомунікацій
+            </td>
+            <td class="col-credits">5.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pg.png" alt="иконка" class="subject-icon"></span> Програмування на Python
+            </td>
+            <td class="col-credits">4.50</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2 Семестр -->
+      <div class="semester-box">
+        <h3 class="semester-title">2 семестр</h3>
+        <table class="schedule-table">
+          <thead>
+          <tr>
+            <th>Назва дисципліни</th>
+            <th class="col-credits">Кредити</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pravo.png" alt="иконка" class="subject-icon"></span> Іноземна мова
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/mova.png" alt="иконка" class="subject-icon"></span> Формування системного наукового світогляду (за вибором)
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/teor.png" alt="иконка" class="subject-icon"></span> Основи теорії кіл
+            </td>
+            <td class="col-credits">4.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/matem.png" alt="иконка" class="subject-icon"></span> Вища математика
+            </td>
+            <td class="col-credits">5.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/matem.png" alt="иконка" class="subject-icon"></span> Фізика
+            </td>
+            <td class="col-credits">5.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pg.png" alt="иконка" class="subject-icon"></span> Алгоритми і структури даних
+            </td>
+            <td class="col-credits">4.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pg.png" alt="иконка" class="subject-icon"></span> Програмування на Python
+            </td>
+            <td class="col-credits">4.50</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="icon"><img src="images/pravo.png" alt="иконка" class="subject-icon"></span> Навчальна практика
+            </td>
+            <td class="col-credits">3.00</td>
+          </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="course-description">
+  <p> Перший курс знайомить студентів з основами освітньої програми,
+    сучасними тенденціями розвитку інфокомунікацій та інформаційних технологій,
+    а також можливими напрямами професійного розвитку. Уже з першого року
+    навчання студенти формують власну освітню траєкторію завдяки
+    дисциплінам за вибором, таким як іноземна мова, українські студії,
+    гуманітарні або економічні курси та правова компетентність.
+    Ці дисципліни сприяють розвитку комунікаційних і міжособистісних
+    навичок (soft skills) та допомагають ефективніше організувати
+    навчальний процес.
+  </p>
+  <br>
+  <p> Фундаментальні дисципліни, вища математика, дискретна математика
+    та фізика, створюють теоретичну основу для подальшого вивчення
+    інженерних і прикладних курсів. Курс «Основи теорії кіл»
+    знайомить студентів з базовими принципами електроніки та електричних систем.
+  </p>
+  <br>
+  <p>Паралельно значна увага приділяється програмуванню.
+    Студенти вивчають мову програмування Python,
+    сучасні середовища розробки, системи контролю версій та
+    інструменти програмування. Курс «Алгоритми і структури даних»
+    розвиває алгоритмічне мислення та навички створення ефективних
+    програмних рішень. Під час навчальної практики студенти знайомляться
+    з операційними системами на базі Linux, які широко використовуються
+    у сучасних інформаційних системах.
+  </p>
+  </div>
+
+
+  <section class="feedback-section">
+    <div class="feedback-container">
+      <!-- Левая часть с картинкой -->
+      <div class="feedback-image-side">
+        <img src="images/vstup.jpg" alt="Вступ" class="feedback-img">
+      </div>
+
+      <!-- Правая часть с формой -->
+      <div class="feedback-form-side">
+        <h2 class="form-main-title">Вступ 2026</h2>
+
+        <form class="feedback-form">
+          <div class="form-group">
+            <label>Ваше ім'я та прізвище</label>
+            <input type="text" placeholder="" required>
+          </div>
+
+          <div class="form-group">
+            <label>Контактний телефон</label>
+            <input type="tel" placeholder="" required>
+          </div>
+
+          <div class="form-group">
+            <label>Електронна пошта</label>
+            <input type="email" placeholder="" required>
+          </div>
+
+          <div class="form-group">
+            <label>Телеграм</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label>Бали НМТ - Математика</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label>Бали НМТ - Українська мова</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label>Бали НМТ - Історія України</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label>Четвертий предмет з НМТ і бали за ним</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label>Які напрями вам цікаві?</label>
+            <textarea rows="4" placeholder=""></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contacts">
+    <h2>Контакти</h2>
+    <address>
+      61070, Харків, вул. Вадима Манька, 17<br>
+      НАУ ім. М.Є. Жуковського "ХАІ"<br>
+      Кафедра інформаційно-комунікаційних технологій №504
+    </address>
+    <br>
+    <br>
+    <div class="contact-details">
+      <div class="phone">
+        <p>Телефон</p>
+        <a href="tel:+380677884301">+38 (067) 788-43-01</a><br>
+        <a href="tel:+380975025715">+38 (097) 502-57-15</a><br>
+        <span>в будні дні з 9-00 до 17-00</span>
+      </div>
+
+      <div class="social">
+        <p>Social</p>
+        <div class="social-icons">
+        <a href="https://www.instagram.com/dict.khai/?hl=uk"><img src="images/inst.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/dept.khai.7"><img src="images/meta.svg" alt="Facebook"></a>
+        <a href="https://t.me/dict_504_khai"><img src="images/tg.svg" alt="Telegram"></a>
+      </div>
+      </div>
+      <div class="email">
+        <p>Пошта</p>
+        <a href="mailto:telecom.nd@gmail.com">telecom.nd@gmail.com</a><br>
+        <a href="mailto:k504@khai.edu">k504@khai.edu</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+
+    <!-- Ліва колонка: Адреса -->
+    <div class="footer-address">
+      <p>
+        61070, Харків, вул. Вадима Манька, 17<br>
+        НАУ "ХАІ"<br>
+        Кафедра інформаційно-комунікаційних<br>
+        технологій №504
+      </p>
+    </div>
+
+    <div class="footer-logo">
+
+      <img src="images/logo.png" alt="Логотип D://CT">
+    </div>
+
+    <div class="footer-contacts">
+      <ul>
+        <li><img src="images/phone1.svg" alt="Телефон"> <a href="tel:+380968088684">+38 (096) 808-86-84</a></li>
+        <li><img src="images/email.svg" alt="Пошта"> <a href="mailto:dict@khai.edu">dict@khai.edu</a></li>
+        <li><img src="images/tg1.svg" alt="Telegram"> <a href="https://t.me/dict_504_khai">@DICT_504_KHAI</a></li>
+        <li><img src="images/meta1.svg" alt="Facebook"> <a href="https://www.facebook.com/dept.khai.7">Dept InfoComm Techs</a></li>
+        <li><img src="images/inst1.svg" alt="Instagram"> <a href="https://www.instagram.com/dict.khai/?hl=uk">DICT.KHAI</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
