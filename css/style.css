@@ -1,15 +1,19 @@
-/* =========================================
-   Базові налаштування (Скидання стилів)
-========================================= */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* Темний фон сайту */
+    background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -20,9 +24,6 @@ a {
     transition: color 0.3s ease;
 }
 
-/* =========================================
-   Шапка (Header) та Навігація
-========================================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@ header {
     padding: 20px 10%;
     background-color: #121212;
     border-bottom: 1px solid #333;
-    position: sticky; /* Шапка прилипає до верху при скролі */
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -67,11 +68,10 @@ header nav a:hover {
     font-weight: bold;
 }
 
-/* =========================================
-   Спільні стилі для секцій
-========================================= */
+
 section {
     padding: 80px 10%;
+    margin: 20px 0;
 }
 
 h2 {
@@ -165,9 +165,9 @@ button:hover {
 
 #specialties .card {
     background-color: transparent;
-    border: 1px solid #444;
-    padding: 40px;
-    border-radius: 15px;
+    border: 1px solid #8E8E8E;
+    padding: 20px;
+    border-radius: 20px;
     text-align: left;
     transition: transform 0.3s, border-color 0.3s;
 }
@@ -202,12 +202,12 @@ button:hover {
 
 #numbers .stat {
     flex: 1;
-    padding: 0 20px;
-    border-right: 1px solid #333;
-}
-
-#numbers .stat:last-child {
+    padding: 10px;
+    border-left: 1px solid #FF3A3A;
     border-right: none;
+}
+#numbers .stat:last-child {
+    border-left: none;
 }
 
 #numbers .stat h3 {
@@ -269,17 +269,17 @@ button:hover {
 .carousel {
     display: flex;
     gap: 20px;
-    overflow-x: auto; /* Додає горизонтальний скрол для ефекту каруселі */
+    overflow-x: auto;
     padding: 20px 0;
     margin-top: 20px;
 }
 
 .review-card, .news-card {
     background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 20px;
     min-width: 320px;
-    border: 1px solid #333;
+    border: 1px solid #8E8E8E;
 }
 
 .review-card .author {
@@ -293,6 +293,17 @@ button:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.news-card {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 320px;
+    border: 1px solid #333;
+}
+.news-card:not(:last-child) {
+    border-left: 1px solid #FF3A3A;
 }
 
 .news-card img {
@@ -455,8 +466,8 @@ button:hover {
    8. Підвал сайту (Footer)
 ========================================= */
 footer {
-    background-color: #121212; /* Темний фон підвалу */
-    padding: 50px 10%;
+    background-color: #121212;
+    padding: 40px 10%;
     border-top: 1px solid #222;
 }
 
