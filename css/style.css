@@ -21,54 +21,9 @@ a {
     transition: color 0.3s ease;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #121212;
-    border-bottom: 1px solid #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo img {
-    height: 40px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-header nav a {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-header nav a:hover {
-    color: #ff4a4a; /* Червоний колір при наведенні */
-}
-
-.controls {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.lang-switch a {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
 section {
-    padding: 80px 10%;
-    margin: 20px 0;
+    padding: 0;
+    margin: 40px 0;
 }
 
 h2 {
@@ -97,45 +52,6 @@ button:hover {
 /* =========================================
    1. Банер сайту
 ========================================= */
-#banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
-}
-
-.banner-text {
-    flex: 1;
-    max-width: 600px;
-}
-
-.banner-text h1 {
-    font-size: 54px;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.banner-text p {
-    color: #cccccc;
-    margin-bottom: 40px;
-    font-size: 18px;
-}
-
-.banner-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.banner-image img {
-    max-width: 100%;
-    height: auto;
-    /* Закруглення кутів як на оригіналі */
-    border-radius: 200px 200px 20px 200px;
-    object-fit: cover;
-}
-
 /* =========================================
    2. Розділ "Наші спеціальності"
 ========================================= */

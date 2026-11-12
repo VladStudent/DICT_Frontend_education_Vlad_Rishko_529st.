@@ -11,31 +11,36 @@
 
 <header>
   <div class="logo">
-   <img src="images/logo.png" alt="Логотип кафедри ІКТ" title="Логотип D://CT">
+    <img src="images/logo.png" alt="Логотип кафедри ІКТ" title="Логотип D://CT">
   </div>
   <nav>
-    <ul>
-      <li><a href="#specialties">СПЕЦІАЛЬНОСТІ</a></li>
-      <li><a href="#science">НАУКА</a></li>
-      <li><a href="#news">НОВИНИ</a></li>
-      <li><a href="#contacts">КОНТАКТИ</a></li>
+    <ul class="main-menu">
+      <li><a class="menu-link" href="#specialties">СПЕЦІАЛЬНОСТІ</a></li>
+      <li><a class="menu-link" href="#science">НАУКА</a></li>
+      <li><a class="menu-link" href="#news">НОВИНИ</a></li>
+      <li><a class="menu-link" href="#contacts">КОНТАКТИ</a></li>
     </ul>
   </nav>
-  <div class="controls">
-    <span class="search-icon">🔍</span>
-    <span class="lang-switch"><a href="#ua">UA</a> | <a href="#en">EN</a></span>
+  <div class="search">🔍</div>
+  <div class="lang">
+    <ul class="lang-wrapper">
+      <li class="ua"><a class="is-active" href="#ua">UA</a></li>
+      <li class="en"><a href="#en">EN</a></li>
+    </ul>
   </div>
 </header>
 
 <main>
 
   <section id="banner">
-    <div class="banner-text">
+    <div class="content-wrapper">
       <h1>Створюй майбутнє. Тут і зараз!</h1>
-      <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар'єри мрії. Почни свій шлях вже сьогодні!</p>
-      <button>ХОЧУ ПОСТУПИТИ</button>
+      <div class="description">
+        <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю, а знання відкривають двері до кар'єри мрії. Почни свій шлях вже сьогодні!</p>
+      </div>
+      <button class="button">ХОЧУ ПОСТУПИТИ</button>
     </div>
-    <div class="banner-image">
+    <div class="image-wrapper">
       <img src="images/Man.png" alt="Студент з ноутбуком" title="Студент кафедри">
     </div>
   </section>
