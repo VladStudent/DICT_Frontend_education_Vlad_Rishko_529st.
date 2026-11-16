@@ -1,0 +1,117 @@
+// Сторінка grid.html: CSS Grid макет
+$grid-dark: #3a3a3a;
+$grid-nav: #e3e3e3;
+$grid-side: #ececec;
+
+.grid-layout {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+
+  .page {
+    max-width: $widedesk;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-areas:
+      "header header"
+      "nav    nav"
+      "intro  intro"
+      "main   sidebar"
+      "footer footer";
+  }
+
+  .page-header,
+  .page-footer {
+    display: block;
+    padding: 40px 20px;
+    background: $grid-dark;
+    color: #ffffff;
+    text-align: center;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .page-header {
+    grid-area: header;
+  }
+
+  .page-nav {
+    grid-area: nav;
+    background: $grid-nav;
+    padding: 20px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    a {
+      color: #1d1d1d;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--red-color);
+      }
+    }
+  }
+
+  .intro {
+    grid-area: intro;
+    padding: 30px 20px 10px;
+  }
+
+  .content {
+    grid-area: main;
+    background: #ffffff;
+    color: #1d1d1d;
+    padding: 20px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: $grid-side;
+    color: #1d1d1d;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .page-footer {
+    grid-area: footer;
+    padding: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $tab) {
+    .page {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "intro"
+        "main"
+        "sidebar"
+        "footer";
+    }
+  }
+}
